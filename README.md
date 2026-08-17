@@ -12,11 +12,11 @@
 </p>
 
 <p align="center">
+  <a href="https://redbellydaotask25.vercel.app/">Live Site</a> ·
   <a href="https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25-Proposal-Evaluation-Rubric.pdf">PDF Report</a> ·
-  <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/hildecorp/redbellydaotask25/main/website/TASK-25-Proposal-Evaluation-Rubric.docx&embedded=true">Word Doc</a>
+  <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/hildecorp/redbellydaotask25/main/website/TASK-25-Proposal-Evaluation-Rubric.docx&embedded=true">Word Doc</a> ·
+  <a href="https://dev.to/hildecorp/from-ratified-checklist-to-working-tool-redbelly-daos-proposal-pre-screening-framework-3im4">Article</a>
 </p>
-
-<p align="center"><sub>Two links still need adding once confirmed: the live Vercel site, and the dev.to article once it is published. Add them to the row above as <code>· [Live Site](url) · [Article](url)</code>.</sub></p>
 
 ---
 
@@ -64,28 +64,37 @@ Two places where the source documents disagree with each other. Both are surface
 
 **Criterion 11 has no ratified flag condition.** Every other criterion pairs a pass condition with an explicit flag rule. Community Involvement does not. Any flag raised there is informational only and never marks a proposal as failing pre-screening on its own.
 
+## Working pre-screening flow
+
+Section 05 of the live site holds the submission form and the pre-screening engine. It covers all 11 criteria, runs entirely client-side, and sends no data anywhere. Two buttons load real proposals from the archive so the flow can be demonstrated without typing anything in by hand:
+
+- Load Proposal #26, rejected, fills the form from the real "Continuation of Long-Term Marketing and PR Campaign with FINPR" submission.
+- Load Proposal #20, passed, fills the form from the real "Marketing Press Only: FINPR Agency" submission.
+
+Clicking Run Pre-Screening produces a pass or flag for each of the 11 criteria, a one-line reason on every flag, and the same Constitution or Code of Conduct citation link used in Section 03. Criteria 08 and 11 are always labelled informational and never contribute to a fail state. A summary line reads "X of 11 passed." The tool never issues an overall accept or reject verdict, that stays with the council.
+
 ## Demo proposals
 
 The rubric runs against one passed and one rejected proposal from the same campaign, the task's own suggested pair.
 
-**#20, "Marketing Press Only, FINPR Agency."** Passed, March 2026. The original campaign.
+**#20, "Marketing Press Only, FINPR Agency."** Passed 85.42% For, 6mo ago. USDT 2,890 to FINPR, 50,000 RBNT to Rainbowmagician for coordination and research. Upfront-weighted payment, 70 percent on booking. Loads into Section 05 as a worked example.
 
-**#26, "Continuation of Long-Term Marketing & PR Campaign with FINPR."** Rejected. Against 71.36%, Abstain 28.64%, For 0%. Voting ended 4 Jul 2026, 12:35 PM. Sought three more months continuing #20.
+**#26, "Continuation of Long-Term Marketing & PR Campaign with FINPR."** Rejected, Against 71.36%, Abstain 28.64%, For 0%. Voting ended 4 Jul 2026, 12:35 PM. Sought three more months continuing #20. Loads into Section 05 as a worked example.
+
+## Documentation
+
+Section 06 of the live site covers three things a council member needs: how the pre-screening flow works, how to update the criterion-to-constitution mapping when Constitution v1.2 is amended or superseded, and how to run a pre-screening check day to day with no technical background required.
 
 ## Deliverables
 
 - [x] Rubric document mapping all 11 criteria to pass/flag conditions and Constitution sections, PDF and Word
-- [ ] Structured submission form
-- [ ] Working pre-screening flow, runnable end to end
-- [ ] Demo run against #20 and #26
-- [ ] Documentation: how it works, how to update the mapping when the Constitution is amended, day-to-day non-technical operation
-
-Confirm and check off the last four before submitting. This README reflects what is built as of the last update, not necessarily what is live now.
+- [x] Structured submission form, Section 05 of the live site
+- [x] Working pre-screening flow, runnable end to end, client-side, no external calls
+- [x] Demo run against #20 and #26, both loadable and runnable from the live site
+- [x] Documentation: how it works, how to update the mapping, day-to-day non-technical operation, Section 06 of the live site
 
 ## Repo structure
-
-```
-website/
+```website/
 ├── TASK-25-Proposal-Evaluation-Rubric.pdf
 ├── TASK-25-Proposal-Evaluation-Rubric.docx
 ├── dao-logo-on-dark.png
@@ -101,15 +110,11 @@ website/
 └── github.svg
 ```
 
-## Site
 
-- [Live Site](https://redbellydaotask25.vercel.app/)
-- [PDF Report](https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25-Proposal-Evaluation-Rubric.pdf)
-- [Word Doc](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/hildecorp/redbellydaotask25/main/website/TASK-25-Proposal-Evaluation-Rubric.docx&embedded=true)
-- [Article](https://dev.to/hildecorp/from-ratified-checklist-to-working-tool-redbelly-daos-proposal-pre-screening-framework-3im4)
+## Site
 
 Deployed on Vercel. Dark theme, Kinetic Consensus design language from the Redbelly DAO Task Board brand kit: Be Vietnam Pro for headings and body, JetBrains Mono for machine-generated values, one accent color, #EF5350, no second accent anywhere.
 
-Four sections: how pre-screening works, known discrepancies, the 11 criteria with clickable Constitution citations, and the full report embedded inline.
+Six sections: how pre-screening works, known discrepancies, the 11 criteria with clickable Constitution citations, the full report embedded inline, the submission form and pre-screening engine, and documentation.
 
 Copy follows the board's voice rules: plain hyphens, no em or en dashes, no emoji beyond the board's own check and cross glyphs, no filler verbs, exact numbers instead of "a few," answer before reasoning.
