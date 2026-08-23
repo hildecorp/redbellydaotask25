@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://redbellydaotask25.vercel.app/">Live Site</a> ·
-  <a href="https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25-Proposal-Evaluation-Rubric.pdf">PDF Report</a> ·
+  <a href="https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25Proposal-Evaluation-Rubric.pdf">PDF Report</a> ·
   <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/hildecorp/redbellydaotask25/main/website/TASK-25-Proposal-Evaluation-Rubric.docx&embedded=true">Word Doc</a> ·
   <a href="https://dev.to/hildecorp/from-ratified-checklist-to-working-tool-redbelly-daos-proposal-pre-screening-framework-3im4">Article</a>
 </p>
@@ -55,7 +55,7 @@ Everything in this repo traces back to four ratified documents. No criterion, se
 | 10 | Compliance & Ethical Standards | Code of Conduct v1.0 |
 | 11 | Community Involvement | Section 7 |
 
-Full pass and flag conditions for each criterion are in the [rubric document](https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25-Proposal-Evaluation-Rubric.pdf), not repeated here.
+Full pass and flag conditions for each criterion are in the [rubric document](https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25Proposal-Evaluation-Rubric.pdf), not repeated here.
 
 ## Known discrepancies
 
