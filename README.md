@@ -30,37 +30,38 @@ Pre-screening is not a decision. It runs before Guild and High Council review, n
 
 ## Sources
 
-Everything in this repo traces back to three ratified documents. No criterion, section, or flag condition is paraphrased from memory.
+Everything in this repo traces back to four ratified documents. No criterion, section, or flag condition is paraphrased from memory.
 
 | Document | What it is | Link |
 |---|---|---|
 | Proposal Review Checklist | The 11 ratified criteria, Snapshot proposal #7, passed 6 Oct 2025 | [Snapshot](https://snapshot.box/#/s:rbnt.eth/proposal/0xf2a05384e37a710c1600db1abbac9b4dc66444a56a1ed49df7f0e3dbfd7570e7) |
-| Constitution v1.2 | Ratified 20 Sep 2025 | [PDF](https://firebasestorage.googleapis.com/v0/b/redbelly-community-dao.firebasestorage.app/o/resources%2F1762476390856-Redbelly%20Community%20DAO%20Constitution%20v1.2%20-%20Ratified.pdf?alt=media&token=c89ccef9-cc7c-4a37-9b43-a3fac9e49ddc) |
+| Constitution v1.3 | Current. Supersedes v1.2 (ratified 20 Sep 2025) | [PDF](https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/constitutionv1.3.pdf) |
+| DAO Guild Structure Consolidation | Merged 2 of the DAO's 5 pods into the other 3, passed 20 Sep 2025 | [Snapshot](https://snapshot.box/#/s:rbnt.eth/proposal/0x901e2873e7907d2ee87de5a79beae4fd602e75d053cd9fc6489e97d2547dd039) |
 | Code of Conduct v1.0 | Snapshot proposal #9, passed 6 Oct 2025, 92.97% For | [PDF](https://firebasestorage.googleapis.com/v0/b/redbelly-community-dao.firebasestorage.app/o/resources%2F1762476540292-Redbelly%20Community%20DAO%20Code%20of%20Conduct%20-%20Ratified.pdf?alt=media&token=84ca2c33-a502-4991-9720-4e6154847416) |
 
 ## The 11 criteria
 
 | # | Criterion | Constitution anchor |
 |---|---|---|
-| 01 | Budget Alignment & Limits | Section 6.2 |
-| 02 | Payment & Payout Structure | Section 7 |
-| 03 | Strategic Fit | Section 3 |
+| 01 | Budget Alignment & Limits | Section 5.7 |
+| 02 | Payment & Payout Structure | Section 6 |
+| 03 | Strategic Fit | No Constitution anchor |
 | 04 | Feasibility & Timeline | No Constitution anchor |
-| 05 | Oversight & Accountability | Section 6.1 |
+| 05 | Oversight & Accountability | Section 5.6 |
 | 06 | Impact & Measurement | No Constitution anchor |
 | 07 | Risk & Mitigation | No Constitution anchor |
 | 08 | Co-Funding & Leverage | No Constitution anchor |
-| 09 | Contribution Equity | Section 5 |
+| 09 | Contribution Equity | Section 4 |
 | 10 | Compliance & Ethical Standards | Code of Conduct v1.0 |
-| 11 | Community Involvement | Section 8 |
+| 11 | Community Involvement | Section 7 |
 
 Full pass and flag conditions for each criterion are in the [rubric document](https://cdn.jsdelivr.net/gh/hildecorp/redbellydaotask25@main/website/TASK-25-Proposal-Evaluation-Rubric.pdf), not repeated here.
 
 ## Known discrepancies
 
-Two places where the source documents disagree with each other. Both are surfaced, not silently resolved.
+Two places where the ratified text does not resolve itself. Both are surfaced, not silently resolved.
 
-**Three working groups vs. five pods.** The ratified checklist text names three working groups: Community, Marketing, Developers/Builders. Constitution Section 3 ratifies five pods, adding Researcher and Partnerships. This framework follows the Constitution as the current, in-force structure. A Researcher or Partnerships submission is not flagged for its pod choice.
+**Three working groups, five pods, then none.** The ratified checklist names three working groups: Community, Marketing, Developers/Builders. Constitution v1.2 ratified five pods for this: Marketing, Builder/Develop, Researcher, Community, Partnerships. The DAO Guild Structure Consolidation vote, passed 20 September 2025, merged 2 of those 5 into the other 3, leaving the same three the checklist names. Constitution v1.3 then removed the pod structure section outright. No section defines working groups or pods anymore. Pre-screening still checks alignment against the three named groups, since that is the ratified checklist text; it just has no Constitution section left to cite. A flag on Strategic Fit is the expected outcome for any submission today, not a sign of a broken tool.
 
 **Criterion 11 has no ratified flag condition.** Every other criterion pairs a pass condition with an explicit flag rule. Community Involvement does not. Any flag raised there is informational only and never marks a proposal as failing pre-screening on its own.
 
@@ -71,7 +72,7 @@ Section 05 of the live site holds the submission form and the pre-screening engi
 - Load Proposal #26, rejected, fills the form from the real "Continuation of Long-Term Marketing and PR Campaign with FINPR" submission.
 - Load Proposal #20, passed, fills the form from the real "Marketing Press Only: FINPR Agency" submission.
 
-Clicking Run Pre-Screening produces a pass or flag for each of the 11 criteria, a one-line reason on every flag, and the same Constitution or Code of Conduct citation link used in Section 03. Criteria 08 and 11 are always labelled informational and never contribute to a fail state. A summary line reads "X of 11 passed." The tool never issues an overall accept or reject verdict, that stays with the council.
+Clicking Run Pre-Screening produces a pass or flag for each of the 11 criteria, a one-line reason on every flag, and the same Constitution or Code of Conduct citation used in Section 03. Reasons are substance checks: missing fields, amounts over a ratified cap, a group outside the ratified list, never a word count. Criteria 08 and 11 are always labelled informational and never contribute to a fail state. A summary line reads "X of 11 passed." The tool never issues an overall accept or reject verdict, that stays with the council.
 
 ## Demo proposals
 
@@ -83,7 +84,7 @@ The rubric runs against one passed and one rejected proposal from the same campa
 
 ## Documentation
 
-Section 06 of the live site covers three things a council member needs: how the pre-screening flow works, how to update the criterion-to-constitution mapping when Constitution v1.2 is amended or superseded, and how to run a pre-screening check day to day with no technical background required.
+Section 06 of the live site covers three things a council member needs: how the pre-screening flow works, which proposals have already superseded Constitution text without a full re-ratification, and how to run a pre-screening check day to day with no technical background required.
 
 ## Deliverables
 
@@ -91,12 +92,13 @@ Section 06 of the live site covers three things a council member needs: how the 
 - [x] Structured submission form, Section 05 of the live site
 - [x] Working pre-screening flow, runnable end to end, client-side, no external calls
 - [x] Demo run against #20 and #26, both loadable and runnable from the live site
-- [x] Documentation: how it works, how to update the mapping, day-to-day non-technical operation, Section 06 of the live site
+- [x] Documentation: how it works, what already supersedes prior text, day-to-day non-technical operation, Section 06 of the live site
 
 ## Repo structure
 ```website/
 ├── TASK-25-Proposal-Evaluation-Rubric.pdf
 ├── TASK-25-Proposal-Evaluation-Rubric.docx
+├── constitutionv1.3.pdf
 ├── dao-logo-on-dark.png
 ├── dao-logo-on-light.png
 ├── favicon-16.png
@@ -109,7 +111,6 @@ Section 06 of the live site covers three things a council member needs: how the 
 ├── devto-ar21.svg
 └── github.svg
 ```
-
 
 ## Site
 
